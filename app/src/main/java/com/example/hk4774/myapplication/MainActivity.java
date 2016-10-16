@@ -103,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
             if (videoThumbnailCursor.moveToFirst()) {
                 thumbPath = videoThumbnailCursor.getString(videoThumbnailCursor.getColumnIndex(MediaStore.Video.Thumbnails.DATA));
                 Log.i("ThumbPath: ", thumbPath);
-
             }
             thumbImage.setImageURI(Uri.parse(thumbPath));
 
